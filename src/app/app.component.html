@@ -1,0 +1,23 @@
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Header -->
+    <header id="header" class="alt">
+      <h1>Hello Nigger</h1>
+      
+    </header>
+
+  <!-- Main -->
+    <div id="main">
+
+      <!-- First Section -->
+        <section id="first" class="main special">
+          <ul class="features">
+            <app-feature 
+            *ngFor='let f of features'
+              [question]='f.question'
+              [answer]='f.answer'
+              [choices]='f.choices'></app-feature>
+          </ul>
+        </section>
+</div>
