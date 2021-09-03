@@ -9,7 +9,7 @@ import { AppComponent } from "../app.component"
 export class FeatureComponent implements OnInit { 
   @Input() question : string = 'question';
   @Input() answer : string = 'answer';
-  @Input() choices : any = []
+  @Input() choices : any = [];
   constructor(private apC : AppComponent) { 
     //apC.callQuestion();
   }
@@ -22,8 +22,15 @@ export class FeatureComponent implements OnInit {
     // working 
     //console.log(choice);
     //console.log(answer);
-    //var button = document.GetElementbyID("btn");
+    //var button = document.getElementById("btn");
     //if correct => change color to green else change color to red
+    var button = document.getElementById(choice);
+    var submittedAnswer = button?.innerHTML;
+    console.log(submittedAnswer);
+
+    //button.style.backgroundColor='#000000';
+
+    //this.button.style.backgroundColor = "rgb(255,0,0)";
     
   }
 

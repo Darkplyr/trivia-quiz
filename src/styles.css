@@ -33,6 +33,19 @@ body {
 	line-height: 1;
 }
 
+.btn-primary:hover {
+    background-color: #e2d1d1 !important;
+}
+
+.btn-primary, .btn-primary:hover {
+	border-radius: 10px !important;
+    border-color: #000000 !important;
+	border-width: 2px !important;
+	margin: 30px !important;
+	width: 300px !important;
+	height: 70px !important;
+}
+
 ol, ul {
 	list-style: none;
 }
