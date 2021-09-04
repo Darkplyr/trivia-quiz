@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, ElementRef} from '@angular/core';
 import { AppComponent } from "../app.component"
 
 @Component({
@@ -24,13 +24,24 @@ export class FeatureComponent implements OnInit {
     //console.log(answer);
     //var button = document.getElementById("btn");
     //if correct => change color to green else change color to red
+    console.log(this.choices);
     var button = document.getElementById(choice);
-    var submittedAnswer = button?.innerHTML;
-    console.log(submittedAnswer);
+    console.log(button?.innerText);
+    if(choice === answer)
+    {
+      console.log("Correct");
+      button?.setAttribute("style", "background-color: #00FF00");
+    }
+    else
+    {
+      console.log("Wrong");
+      button?.setAttribute("style", "background-color: #FF0000");
+    }
 
-    //button.style.backgroundColor='#000000';
-
-    //this.button.style.backgroundColor = "rgb(255,0,0)";
+    for (let i = 0; i < this.choices.length; i++) {
+      var button1 = document.getElementById(this.choices[i]);
+      button1?.setAttribute("disabled", "")
+    }
     
   }
 

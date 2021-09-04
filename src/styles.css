@@ -44,6 +44,7 @@ body {
 	margin: 30px !important;
 	width: 300px !important;
 	height: 70px !important;
+	font-weight: bold !important;
 }
 
 ol, ul {
