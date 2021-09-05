@@ -47,6 +47,11 @@ body {
 	font-weight: bold !important;
 }
 
+.btn-progBar {
+	width: 30px !important;
+	height: 10px !important;
+}
+
 ol, ul {
 	list-style: none;
 }
