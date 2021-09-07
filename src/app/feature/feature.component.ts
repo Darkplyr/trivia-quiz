@@ -22,13 +22,11 @@ export class FeatureComponent implements OnInit {
     var answerBtn = document.getElementById(choice);
     if(choice === answer)
     {
-      console.log("Correct");
       answerBtn?.setAttribute("style", "background-color: #00FF00");
       this.createElement("#00FF00");
     }
     else
     {
-      console.log("Wrong");
       answerBtn?.setAttribute("style", "background-color: #FF0000");
       this.createElement("#FF0000");
     }
