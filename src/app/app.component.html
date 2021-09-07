@@ -14,6 +14,7 @@
         <section id="first" class="main special">
           <ul class="features">
             <div id="progBar"></div>
+            <!-- wrap in ngIf -->
             <app-feature 
             *ngFor='let f of features'
               [question]='f.question'
