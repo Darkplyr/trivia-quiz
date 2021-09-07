@@ -1826,7 +1826,7 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="submit"],
+	/* input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
@@ -1851,7 +1851,7 @@ input, select, textarea {
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
-	}
+	} */
 
 		input[type="submit"].icon,
 		input[type="reset"].icon,
@@ -1903,7 +1903,7 @@ input, select, textarea {
 		.button.disabled,
 		.button:disabled {
 			pointer-events: none;
-			opacity: 0.25;
+			opacity: 1;
 		}
 
 		@media screen and (max-width: 736px) {

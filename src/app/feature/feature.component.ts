@@ -55,15 +55,10 @@ export class FeatureComponent implements OnInit {
 
   createElement(choice : string) : void {
     var element = document.createElement("button");
-    var asnwerBtn = document.getElementById(choice);
     element?.setAttribute("disabled", "true");
     element?.setAttribute("class", "btn-progBar");
-    element?.setAttribute("style", "width: 10px; background-color: " + choice)
-    console.log("Done!");
+    element?.setAttribute("style", "background-color: " + choice +  "; border-color: " + choice);
     var body = document.getElementById("progBar");
     body?.appendChild(element);
-    element.addEventListener ("click", function() {
-      alert("did something");
-    });
   }
 }

@@ -3,11 +3,11 @@
       <h3 id= "question">{{question}}</h3>
       <div class="row">
         <ul *ngFor="let choice of choices" class='col-lg-6 col-md-6' >
-          <button id={{choice}} class ="btn btn-primary"
+          <button id={{choice}} class ="btn btn-primary" 
            (click)= "checkAnswer(choice,answer)"
            >{{choice}}</button><br>
         </ul>
       </div>
-      <button id="nxtBtn" class="btn btn-primary" (click) = "nextQuestion()">Next</button>
+      <button id="nxtBtn" class="btn btn-next" (click) = "nextQuestion()">Next</button>
     </div>
 </div>
